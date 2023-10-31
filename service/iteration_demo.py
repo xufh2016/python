@@ -4,6 +4,9 @@ from collections.abc import Iterable
 
 # 如果要对list实现类似Java那样的下标循环怎么办？Python内置的enumerate函数可以把一个list变成索引-元素对，这样就可以在for循环中同时迭代索引和元素本身
 lista = [1, 2, 5, 7, 9, 2]
+a = iter(lista)
+print(next(a))
+print(next(a))
 for index, value in enumerate(lista):
     print(f"索引值是：{index}", f"当前索引对应的值是：{value}")
 # it = iter(lista)
